@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h3{
+    font-weight: 100;
+}
+
+p{
+    font-weight: 100;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #414141;
+    display: flex;
+}
+
+/* --------Side nav---------- */
+
+.sideNav {
+    width: 30vw;
+    height: 100vh;
+    background-color: #313131;
+    display: inline-block;
+}
+
+.noteCollection {
+    padding: 20px 15px 15px 0px;
+}
+
+.noteCard {
+    display: flex;
+    padding: 20px 30px;
+    border-radius: 0px 60px 60px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all cubic-bezier(1, 0.45, 0.49, 1.05) 0.2s;
+}
+
+.titleBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.tags{
+    display: inline-block;
+    width: 68px;
+    text-align: center;
+    padding: 4px 10px;
+    background-color: #525252;
+    border-radius: 19px;
+}
+
+.noteCard h3{
+    width: 60%;
+}
+
+.noteCard:hover{
+    background-color: #414141;
+
+}
+
+
+
+
+.noteEditor {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+}
+
+
+/* ---------Reusable--------- */
+
+.overflowHide{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
