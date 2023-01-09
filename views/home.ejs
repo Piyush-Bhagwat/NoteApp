@@ -3,24 +3,30 @@
 <div class="body">
     <div class="sideNav">
         <div class="noteCollection">
-            <div class="noteCard">
+
+            <%notes.forEach((note)=>{%>
+                <div class="noteCard">
                 <div class="titleBox">
-                    <h3 class="overflowHide"><%=title%></h3>
-                    <p><%=noteDate%></p>
+                    <h3 class="overflowHide"><%=note.title%></h3>
+                    <p><%=note.date%></p>
                 </div>
                 <div class="tagBox">
-                    <%for(let i=0; i<tags.length; i++){%>
+                    <%for(let i=0; i<note.tags.length; i++){%>
                         <%if(i==3) break; %>
-                    <p class="tags overflowHide"><%=tags[i]%></p>
+                    <p class="tags overflowHide"><%=note.tags[i]%></p>
                     <%}%>
                 </div>
             </div>
+            <%})%>
+
+            
+
+
         </div>
     </div>
     <div class="noteEditor">
         <div class="displayArea">
-            <h1><%=title%></h1>
-            <p><%=content%></p>
+            
         </div>
     </div>
 </div>
